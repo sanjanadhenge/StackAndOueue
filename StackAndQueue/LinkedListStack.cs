@@ -27,5 +27,14 @@ namespace StackAndQueue
             this.top = node;
             Console.WriteLine("{0} is pushed to stack", value);
         }
+        internal void Display()
+        {
+            Node temp= this.top;
+            while (temp != null)
+            {
+                Console.WriteLine(temp.data + "");
+                temp = temp.next;
+            }
+        }
     }
 }
